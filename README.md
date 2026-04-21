@@ -1,6 +1,6 @@
 # img2table
 
-Small workspace for extracting tables from PDFs with the [img2table](https://pypi.org/project/img2table/) library and [Tesseract](https://github.com/tesseract-ocr/tesseract) OCR, using the walkthrough in `img2table.ipynb`.
+Small workspace for extracting tables from PDFs with the [img2table](https://pypi.org/project/img2table/) library and [Tesseract](https://github.com/tesseract-ocr/tesseract) OCR, using the walkthrough in `example.ipynb`.
 
 ## About the img2table library
 
@@ -51,7 +51,7 @@ That installs the project dependencies (`img2table`, `pillow`, and their transit
 
 ## Notebook workflow
 
-`img2table.ipynb` does the following, in order:
+`example.ipynb` does the following, in order:
 
 1. Import `PDF` from `img2table.document`, `TesseractOCR` from `img2table.ocr`, and `display_html` from `IPython.display`.
 2. Load `sample-tables.pdf`, configure `TesseractOCR(n_threads=1, lang="eng")`, and call `doc.extract_tables(...)` with `implicit_rows`, `implicit_columns`, `borderless_tables`, and `min_confidence` set as in the notebook.
