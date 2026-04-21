@@ -1,7 +1,16 @@
 [project]
-name = "img2table"
+name = "img2table-python"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "img2table>=1.4.2",
+    "pillow>=12.2.0",
+]
+
+[dependency-groups]
+notebook = [
+    "ipython>=9.0.0",
+    "ipykernel>=7.0.0",
+]
